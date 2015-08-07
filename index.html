@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>My first app</title>
+  </head>
+  <body>
+    <h1>Hello World!!</h1>
+    <p>Maybe this will become a nice little webapp</o>
+    <p id="xhrResponse"></p>
+    <script>
+      var xhr = new XMLHttpRequest()
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200)
+          console.log("Got response: " + xhr.responseText)
+          var message = JSON.parse(xhr.responseText)
+          document.getElementById('xhrResponse').innerHTML = message.value
+      }
+      xhr.open('GET', 'data', true)
+      xhr.send()
+    </script>
+  </body>
+</html>

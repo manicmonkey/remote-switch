@@ -1,0 +1,23 @@
+{
+  "name": "remote-switch",
+  "version": "1.0.0",
+  "description": "Simple node.js project to control an electrical socket",
+  "main": "index.js",
+  "dependencies": {
+    "rcswitch": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manicmonkey/remote-switch.git"
+  },
+  "author": "James Baxter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manicmonkey/remote-switch/issues"
+  },
+  "homepage": "https://github.com/manicmonkey/remote-switch#readme"
+}
